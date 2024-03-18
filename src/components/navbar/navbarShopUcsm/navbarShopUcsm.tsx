@@ -4,8 +4,8 @@ import { ChevronDown, Menu, X } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
 
-import { BadgeShopCart, BtnCollapse, NavbarMenu, dataNavbar, dataServicesCatoexpress } from "."
-import { Avatar } from "@/components"
+import { BadgeShopCart, BtnCollapse, NavbarMenu } from "."
+import { Avatar, dataNavbar, dataServicesCatoexpress } from "@/components"
 
 
 export const NavbarShopUcsm = () => {
@@ -50,7 +50,7 @@ export const NavbarShopUcsm = () => {
                     {dataServicesCatoexpress.map((item, index) => (
                       <li key={index}>
                         <Link
-                          href={`/categorias/${item.name.toLowerCase()}`}
+                          href={`/shopUcsm/${item.name.toLowerCase()}`}
                           className="block px-4 py-2 hover:bg-gray-100"
                           onClick={() => setOpenDropDown(false)}
                         >
