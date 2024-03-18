@@ -7,7 +7,7 @@ import { ChevronDown } from 'lucide-react';
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-import { dataNavbar, dataServicesCatoexpress } from "./navbar.data";
+import { dataNavbar, dataServicesCatoexpress } from "../navbar.data";
 
 
 export const NavbarMenu = ({
