@@ -3,14 +3,14 @@ export const dataNavbar = [{ label: "Nosotros" }, { label: "Contáctanos" }];
 export const dataServicesCatoexpress: IService[] = [
   {
     name: "Ceprobis UCSM",
+    url: "/ceprobis ucsm",
   },
   {
     name: "Panificadora UCSM",
+    url: "/panificadora ucsm",
   },
   {
-    name: "Como en Casa UCSM",
-  },
-  {
-    name: "El Cholo UCSM",
+    name: "Cafetería",
+    url: "/cafeteria",
   },
 ];
