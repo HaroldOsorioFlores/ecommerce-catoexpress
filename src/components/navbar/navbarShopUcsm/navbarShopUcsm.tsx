@@ -50,7 +50,7 @@ export const NavbarShopUcsm = () => {
                     {dataServicesCatoexpress.map((item, index) => (
                       <li key={index}>
                         <Link
-                          href={`/shopUcsm/${item.name.toLowerCase()}`}
+                          href={`/shopUcsm/${item.url}`}
                           className="block px-4 py-2 hover:bg-gray-100"
                           onClick={() => setOpenDropDown(false)}
                         >
