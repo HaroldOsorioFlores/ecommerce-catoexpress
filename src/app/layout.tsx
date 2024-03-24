@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Source_Code_Pro } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
-const inter = Source_Code_Pro({ subsets: ["latin"] });
+const inter = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
