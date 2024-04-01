@@ -17,6 +17,9 @@ const config: Config = {
         'green-main': '#DCE9D0',
         'green-bg-light': '#EFF8E9',
       },
+      screens: {
+        'xss': '330px'
+      }
     },
   },
   plugins: [],

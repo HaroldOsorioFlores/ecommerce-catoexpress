@@ -22,7 +22,7 @@ export const Avatar = ({ name }: { name: string }) => {
       onBlur={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget)) setOpenDropDown(false);
       }}
-      className="relative mx-auto"
+      className="mx-auto"
     >
       <button
         className="relative inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-primary rounded-full bg-[#246D19] hover:bg-[#1d5814]"
@@ -35,7 +35,7 @@ export const Avatar = ({ name }: { name: string }) => {
       {openDropDown && (
         <div
           id="userDropdown"
-          className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg right-0 w-[27.6875rem] mt-[2.6875rem] shadow-[4px_4px_16.3px_0px_#00000024]"
+          className="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg right-0 sm:w-[27.6875rem] mt-[2.6875rem] shadow-[4px_4px_16.3px_0px_#00000024] w-[15rem]"
         >
           <div className="px-4 py-3 text-sm text-gray-900">
             <Link href={`/perfil/UserEjemplo`} className="block">
