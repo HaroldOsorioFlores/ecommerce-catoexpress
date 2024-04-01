@@ -18,12 +18,12 @@ if (typeof window !== 'undefined') {
   SwiperInstance = require('swiper').default;
 }
 
-const NewSwiper = ({data}: {data:IProduct[]}) => {
-  console.log({data})
+const NewSwiper = ({ data }: { data: IProduct[] }) => {
+  console.log({ data })
 
   return (
     <div className='h-full'>
-    <Swiper
+      <Swiper
         centeredSlides={true}
         spaceBetween={30}
         pagination={{
@@ -50,12 +50,12 @@ const NewSwiper = ({data}: {data:IProduct[]}) => {
             spaceBetween: 50,
           },
         }}
-    >
-      {data.map(product=><SwiperSlide><div>
-        
-    <Image className="rounded-lg h-[15rem] object-cover" src={product.urlImage} alt="" width={2000} height={2000} priority />
-    <p>{product.description}</p></div></SwiperSlide>)}
-    </Swiper>
+      >
+        {data.map(product => <SwiperSlide key={product._id}><div>
+
+          <Image className="rounded-lg h-[15rem] object-cover" src={product.urlImage} alt="" width={2000} height={2000} priority />
+          <p>{product.description}</p></div></SwiperSlide>)}
+      </Swiper>
     </div>
   );
 }
