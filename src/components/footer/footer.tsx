@@ -13,9 +13,9 @@ const dataShop = [
 
 export const Footer = () => {
   return (
-    <div className="bg-zinc-800 py-14 px-14 md:px-20 lg:px-44">
+    <footer className="bg-zinc-800 py-6 px-14 md:px-20 lg:px-44">
       <hr className="border-t-2 border-gray-600" />
-      <div className="flex flex-col md:flex-row w-full text-slate-50 text-tiny my-10">
+      <div className="flex flex-col md:flex-row w-full text-slate-50 text-tiny my-6">
         <div className="flex flex-col sm:flex-row w-full md:w-9/12 lg:w-full space-y-10 sm:space-y-0 px-5 sm:px-0 items-center justify-center">
           <div className="flex-col space-y-1.5 px-6 w-full sm:w-2/5">
            <Image
@@ -77,7 +77,7 @@ export const Footer = () => {
                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                  />
                </svg>
-               
+
                <input
                  type="search"
                  placeholder="Buscar..."
@@ -89,7 +89,7 @@ export const Footer = () => {
        </div>
      </div>
      <hr className="border-t-2 border-gray-600" />
-   </div>
+   </footer>
   );
 };
 

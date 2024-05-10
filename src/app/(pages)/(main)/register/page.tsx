@@ -1,3 +1,3 @@
 export default function Register() {
-  return <>Register Page</>
+  return <main className="mt-20 p-4">Register Page</main>;
 }
